@@ -1,0 +1,20 @@
+id: 58a77fda-e6f7-42f8-add5-51c88e1d4b8a
+timestamp: 2023-12-20T15:15:56.679Z
+source: TAP-GUI
+username: guest
+accelerator:
+  name: tanzu-java-web-app
+fragments:
+  - name: build-wrapper-gradle
+  - name: build-wrapper-maven
+  - name: devcontainer
+  - name: java-version
+  - name: tap-workload
+options:
+  projectName: tanzu-java-web-app-prometheus
+  buildTool: maven
+  springBootVersion: 3.1
+  nativeBuild: false
+  javaVersion: 17
+  includeBuildToolWrapper: false
+  includeDevContainer: false
