@@ -2,6 +2,10 @@ apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
   name: tanzu-java-web-app-prometheus
+  annotations:
+    prometheus.io/scrape: 'true'
+    prometheus.io/path: '/actuator/prometheus'
+    prometheus.io/port: '8081'
   labels:
     apps.tanzu.vmware.com/workload-type: web
     apps.tanzu.vmware.com/has-tests: "true"
