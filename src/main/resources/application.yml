@@ -2,8 +2,6 @@ spring:
   application:
     name: tanzu-java-web-app
 management:
-  server:
-    port: "8082"
   endpoints:
     web:
       exposure:
