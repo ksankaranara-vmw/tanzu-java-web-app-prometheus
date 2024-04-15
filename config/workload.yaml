@@ -1,12 +1,12 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  name: tanzu-java-web-app-prometheus-without-annotations
+  name: tanzu-java-web-app-prometheus
   labels:
     apps.tanzu.vmware.com/workload-type: web
     apps.tanzu.vmware.com/has-tests: "true"
     tanzu.app.live.view.application.actuator.path: "api/actuator"
-    app.kubernetes.io/part-of: tanzu-java-web-app-prometheus-without-annotations
+    app.kubernetes.io/part-of: tanzu-java-web-app
 spec:
   build:
     env:
